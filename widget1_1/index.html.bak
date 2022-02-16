@@ -378,5 +378,14 @@
    document.getElementById("myNav").style.width = "0%";
    }
 </script>   
+
+<script
+  id="purecloud-webchat-js"
+  type="text/javascript"
+  src="https://apps.mypurecloud.ie/webchat/jsapi-v1.js"
+  region="eu-west-1"
+  org-guid="2b34b613-4710-48ca-87f2-c3cbf273192c"
+  deployment-key="09104cbc-5162-418d-90a6-235550c0ca52"
+></script>
 </body>
 </html>
