@@ -102,7 +102,6 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-				  <button type="button" id="chat-button" onclick="customPlugin.command('WebChat.open', getAdvancedConfig());">Start Chat</button>
                      <h2>Best jewellery</h2>
                      <p> a reader will be distracted by the readable content of a page when looking at its layout. The point of using LoremIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
                   </div>
@@ -340,93 +339,6 @@
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-	  
-	  <script src="https://apps.mypurecloud.ie/widgets/9.0/cxbus.min.js" onload="javascript:CXBus.configure({debug:false,pluginsPath:'https://apps.mypurecloud.ie/widgets/9.0/plugins/'}); CXBus.loadPlugin('widgets-core');"></script>
-
-<script>
-  window._genesys = {
-    "widgets": {
-      "webchat": {
-        "transport": {
-          "type": "purecloud-v2-sockets",
-          "dataURL": "https://api.mypurecloud.ie",
-          "deploymentKey": "4a84e71a-e108-4287-bf74-138aa5f0ffea",
-          "orgGuid": "2b34b613-4710-48ca-87f2-c3cbf273192c",
-          "interactionData": {
-            "routing": {
-              "targetType": "QUEUE",
-              "targetAddress": "BeneLarioQueue",
-              "priority": 2
-            }
-          }
-        },
-        "userData": {
-          "addressStreet": "",
-          "addressCity": "",
-          "addressPostalCode": "",
-          "addressState": "",
-          "phoneNumber": "",
-          "customField1Label": "",
-          "customField1": "",
-          "customField2Label": "",
-          "customField2": "",
-          "customField3Label": "",
-          "customField3": ""
-        }
-      }
-    }
-  };
-
-  function getAdvancedConfig() {
-    return {
-      "form": {
-        "autoSubmit": false,
-        "firstname": "",
-        "lastname": "",
-        "email": "",
-        "subject": ""
-      },
-      "formJSON": {
-        "wrapper": "<table></table>",
-        "inputs": [
-          {
-            "id": "cx_webchat_form_firstname",
-            "name": "firstname",
-            "maxlength": "100",
-            "placeholder": "Required",
-            "label": "First Name"
-          },
-          {
-            "id": "cx_webchat_form_lastname",
-            "name": "lastname",
-            "maxlength": "100",
-            "placeholder": "Required",
-            "label": "Last Name"
-          },
-          {
-            "id": "cx_webchat_form_email",
-            "name": "email",
-            "maxlength": "100",
-            "placeholder": "Optional",
-            "label": "Email"
-          },
-          {
-            "id": "cx_webchat_form_subject",
-            "name": "subject",
-            "maxlength": "100",
-            "placeholder": "Optional",
-            "label": "Subject"
-          }
-        ]
-      }
-    };
-  }
-
-  const customPlugin = CXBus.registerPlugin('Custom');
-</script>
-
-
-
     
    </body>
 </html>
