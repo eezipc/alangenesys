@@ -962,3 +962,66 @@ span.feature-review {margin-left: 10px;}
     100%  {bottom:7px;}
 }
 /*========================Thank you=================
+
+
+
+
+let chatConfig = {
+  "webchatAppUrl": "https://apps.mypurecloud.ie/webchat",
+  "webchatServiceUrl": "https://realtime.mypurecloud.ie:443",
+  "orgId": "17838",
+  "orgGuid": "2b34b613-4710-48ca-87f2-c3cbf273192c",
+  "orgName": "astauntondev",
+  "queueName": "BeneLarioQueue",
+  "logLevel": "DEBUG",
+  "locale": "en",
+  "data": {
+    "firstName": "",
+    "lastName": "",
+    "addressStreet": "",
+    "addressCity": "",
+    "addressPostalCode": "",
+    "addressState": "",
+    "phoneNumber": "",
+    "customField1Label": "",
+    "customField1": "",
+    "customField2Label": "",
+    "customField2": "",
+    "customField3Label": "",
+    "customField3": ""
+  },
+  "companyLogo": {
+    "width": 600,
+    "height": 149,
+    "url": "https://d3a63qt71m2kua.cloudfront.net/developer-tools/2280/assets/images/PC-blue-nomark.png"
+  },
+  "companyLogoSmall": {
+    "width": 25,
+    "height": 25,
+    "url": "https://d3a63qt71m2kua.cloudfront.net/developer-tools/2280/assets/images/companylogo.png"
+  },
+  "agentAvatar": {
+    "width": 462,
+    "height": 462,
+    "url": "https://d3a63qt71m2kua.cloudfront.net/developer-tools/2280/assets/images/agent.jpg"
+  },
+  "welcomeMessage": "Thanks for chatting using the dev tools chat page.",
+  "cssClass": "webchat-frame",
+  "css": {
+    "width": "100%",
+    "height": "100%"
+  }
+};
+
+ININ.webchat.create(chatConfig, function(err, webchat) {
+    if (err) {
+        console.error(err);
+        throw err;
+    }
+
+    webchat.renderPopup({
+        width: 400,
+        height: 400,
+        title: 'Chat'
+    });
+});

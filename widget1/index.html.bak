@@ -918,16 +918,6 @@
         
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
-		
-		
-		<script
-  id="purecloud-webchat-js"
-  type="text/javascript"
-  src="https://apps.mypurecloud.ie/webchat/jsapi-v1.js"
-  region="eu-west-1"
-  org-guid="2b34b613-4710-48ca-87f2-c3cbf273192c"
-  deployment-key="93d954d7-6b80-4384-936a-c5fafb78f64a"
-></script>
         
     </body>
 	
